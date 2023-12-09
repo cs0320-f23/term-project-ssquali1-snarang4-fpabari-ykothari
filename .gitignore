@@ -1,0 +1,9 @@
+term-project-ssquali1-snarang4-fpabari-ykothari
+
+front/node_modules/
+front/playwright-report/
+front/test-results/
+
+back/.idea/
+back/target/
+

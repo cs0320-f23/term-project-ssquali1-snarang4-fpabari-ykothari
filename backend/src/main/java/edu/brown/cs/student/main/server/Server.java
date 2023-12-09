@@ -2,6 +2,7 @@ package edu.brown.cs.student.main.server;
 
 import static spark.Spark.after;
 
+import edu.brown.cs.student.main.LoginHandler.LoginManager;
 import edu.brown.cs.student.main.acsdatasource.OLD_ACSDatasource;
 import edu.brown.cs.student.main.api.handlers.BroadbandHandler;
 import edu.brown.cs.student.main.api.handlers.RedliningHandler;
@@ -36,6 +37,10 @@ public class Server {
 //    Spark.get("/redlining", new RedliningHandler());
 //    Spark.get("/search", new JsonSearcher());
     Spark.get("/safetymap", new SafePlaceHandler());
+    Spark.get("/login", new LoginManager());
+    Spark.get("/register", new LoginManager());
+
+
 
     Spark.init();
     Spark.awaitInitialization();
