@@ -4,6 +4,8 @@ front/node_modules/
 front/playwright-report/
 front/test-results/
 
+.idea/
 back/.idea/
+
 back/target/
 
